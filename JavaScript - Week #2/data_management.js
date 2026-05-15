@@ -26,6 +26,7 @@ for (let number of numbers) {
     console.log("Current number:", number);               // Show each value stored in the Set
 }
 
+
 // Task #3: creating a Map
 let mapCreated = new Map();
 
@@ -40,6 +41,19 @@ console.log("Category:", mapCreated.get("Category"));                // Show the
 console.log("Product Name:", mapCreated.get("Product Name"), "\n");  // Show the product name
 
 // Loop through the Map
+console.log("Loop for...of")
 for (let [key, value] of mapCreated) {
     console.log(`${key}: ${value}`);      // Show each key and value
 }
+
+
+// Taks 4: iteration over data structures
+
+// Loop through all object properties
+console.log("\nLoop for...in")
+for (let key in product) {
+    console.log(`${key}: ${product[key]}`);
+}
+// Loop through all Map elements
+console.log("\nLoop forEach")
+mapCreated.forEach((key, value) => {console.log(`${key}: ${value}`)});
