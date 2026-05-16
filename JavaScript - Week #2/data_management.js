@@ -2,7 +2,7 @@
 let product = {
     id: 1,                  // Product ID
     productName: "apple",   // Product name
-    price: 2500             // Product price
+    price: 2000             // Product price
 }
 // Show the complete object in the console
 console.log(product);
@@ -57,3 +57,37 @@ for (let key in product) {
 // Loop through all Map elements
 console.log("\nLoop forEach")
 mapCreated.forEach((key, value) => {console.log(`${key}: ${value}`)});
+
+
+// Task #5: Validation and testing
+
+// Validate the object information
+if (typeof product.id === "number" && typeof product.productName === "string" &&  typeof product.price === "number" &&  product.price > 0  && product.id !== null && product.productName !== null && product.price !== null) {
+    console.log("\nValid object");     // Object is valid
+} else {
+    console.log("\nInvalid object");   // Object is invalid
+}
+
+// Validate the set information
+let set;
+for (let number of numbers) {
+    if (typeof number !== "number") {
+        set = false;
+        break
+    } else {
+        set = true;
+    }
+}
+
+if (set === true) {
+    console.log("Valid set");    // Set is valid
+} else {
+    console.log("Invalid set");  // Set is valid
+}
+
+// Validate the map information
+if (typeof mapCreated.get("ID") === "number" && mapCreated.get("ID") >= 0 && typeof mapCreated.get("Product Name") === "string" && typeof mapCreated.get("Price") === "number" && mapCreated.get("Price") > 0 && mapCreated.get("ID") !== null && mapCreated.get("Product Name") !== null && mapCreated.get("Price") !== null) {
+    console.log("Valid map");     // Map is valid
+} else {
+    console.log("Invalid map");   // Map is invalid
+}
