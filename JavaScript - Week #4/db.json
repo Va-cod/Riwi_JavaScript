@@ -1,0 +1,9 @@
+{
+  "notas": [
+    {
+      "text": "kk",
+      "id": "X3lH-xK3LvA"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

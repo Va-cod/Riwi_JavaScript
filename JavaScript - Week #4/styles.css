@@ -1,0 +1,91 @@
+/* General page styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #306365;
+    margin: 0;
+    padding: 40px;
+}
+
+/* Main container */
+.container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* Card style */
+.card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 5px;
+    width: 320px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Titles */
+h1, h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+/* Paragraph */
+p {
+    color: #666;
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Label */
+label {
+    font-weight: bold;
+    color: #444;
+}
+
+/* Input */
+input {
+    padding: 10px;
+    border: 1.5px solid #000000;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Input focus effect */
+input:focus {
+    outline: none;
+    border-color: #4a90e2;
+}
+
+/* Button */
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #ab3f46;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Button hover */
+button:hover {
+    background-color: #a15b60;
+}
+
+/* Notes list */
+#listNotes {
+    padding-left: 20px;
+}
+
+/* Notes items */
+#listNotes li {
+    margin-bottom: 10px;
+    color: #333;
+}
